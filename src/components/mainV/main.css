@@ -1,0 +1,371 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+body {
+    height: 100%;
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    
+}
+
+.bars-box {
+    display: none;
+}
+
+.hero {
+    height: 580px;
+}
+
+.hero_child {
+    display: flex;
+    align-items: center;
+}
+
+.line-box {
+    position: relative;
+    left: 40px;
+    top: 20px;
+    height: 500px;
+    z-index: 1;
+}
+
+.hero .line {
+    display: block;
+    height: 500px;
+    width: 2px;
+    background-color: #c2d2cf;
+}
+
+.circle {
+    position: absolute;
+    top: 0px;
+    left: -6.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(194, 210, 207, 0.8);
+    border: 1px solid rgba(194, 210, 207, 0.8);
+    font-size: 12px;
+    color: white;
+}
+
+.circle-1 {
+    top: 40px;
+}
+
+.circle-2 {
+    top: 165px;
+}
+
+.circle-3 {
+    top: 290px;
+}
+
+.circle-4 {
+    top: 415px;
+}
+
+.text {
+    margin-left: 80px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.text-box h1{
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+
+.hero-footer .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #c2d2cf;
+    bottom: 20px;
+}
+
+
+.circle-chivron {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    width: 30px;
+    background-color: rgba(194, 210, 207, 0.8);
+}
+
+.circle-chivron:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+
+.active-circle {
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.ecoturizm{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.ecoturizm .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}   
+
+.ecoturizm .container img{
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.eco_box {
+    max-width: 400px;
+    width: 100%;
+    font-family: "Inter";
+}
+
+.eco_box h1{
+    color: #ff4e00;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.eco_box article{
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    color: #5a5a5a;
+    margin-bottom: 30px;
+}
+
+.eco_box p{
+    color: #5a5a5a;
+    font-size: 17px;
+    vertical-align: baseline;
+    letter-spacing: 2px;
+    line-height: 26px;
+}
+
+
+.content{
+    margin-top: 40px;
+}
+
+.content .container h1{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.line{
+    width: 200px;
+    height: 2px;
+    background-color: hsl(215, 51%, 70%);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.content_article {
+  width: 30%;
+}
+
+.content_upper {
+  background-color: hsl(216, 50%, 16%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.content_body{
+    margin-top: 10px;
+}
+
+.content_body p{
+  font-size: 20px;
+}
+
+.youTube_content .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.youTube_content .container iframe {
+  max-width: 1100px;
+  width: 100%;
+  height: 650px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carousel{
+    margin-bottom: 200px;
+}
+
+
+@media screen and (max-width:1000px) {
+    .ecoturizm .container{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        letter-spacing: 0;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .service-box{
+        margin-left: -40px;
+    }
+    .line-box{
+        display: none;
+    }
+    .main{
+        background-size: cover;
+    }
+    .hero_child{
+        flex-direction: column;
+    }
+
+    .text{
+        text-align: center;
+        margin: 0 !important;
+        margin-top: 20px !important;   
+    }
+
+    .card-container{
+        padding: 12px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .content-box{
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+    .content_article{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .youTube_content .container iframe{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .card-container{
+        max-width: 180px;
+    }
+    .card_btn{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:510px) {
+    
+    .text{
+        padding: 0;
+        margin: 0px !important;
+        text-align: center;
+        margin-top: 20px !important;   
+    }
+    .text-box {
+      padding: 0 !important;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .service_article{
+        padding: 4px;
+        margin-left: 10px;
+    }
+    .service_article p{
+        font-size: 18px;
+    }
+    .service-box{
+        margin-left: -10px;
+    }
+    .eco_box article {
+        font-size: 15px;
+    }
+    .eco_box p{
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+    .youTube_content .container iframe{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .service_article{
+        width: 150px;
+    }
+    .card-container{
+        max-width: 150px;
+    }
+
+    .card__title{
+        font-size: 14px;
+    }
+
+    .card_section{
+        margin-top: 40px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .card-container{
+        max-width: 180px;
+        display: block;
+    }
+
+    .card__title{
+        margin: 2px;
+    }
+}
+
+
+
+@media screen and (max-width:335px) {
+    .service_article{
+        width: 120px;
+    }
+}
+
+
+

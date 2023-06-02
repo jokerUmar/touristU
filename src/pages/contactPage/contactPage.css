@@ -1,0 +1,143 @@
+.contact-page {
+    margin-top: 100px;
+    display: flex;
+}
+
+.contact-box-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 98%;
+    padding: 10px;
+}
+
+.contact_box-left-page {
+    padding: 20px;
+    max-width: 46%;
+    width: 100%;
+}
+
+.contact_box-right-page {
+    height: 100%;
+}
+
+.contact-page iframe {
+    margin-top: 2px;
+    height: 420px;
+    width: 720px;
+}
+
+.contact_title-page {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: rgb(255, 78, 0);
+    font-weight: 800;
+}
+
+.contact_box-left-page h2 {
+    font-size: 28px !important;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.contact-page_addres,
+.contact-page_call,
+.contact-page_email {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    width: 80%;
+}
+
+.contact-page_addres p,
+.contact-page_call p,
+.contact-page_email p{
+    color: #5a5a5a;
+
+}
+
+.input-box {
+  margin: 60px 50px 0 50px;
+}
+
+.name-page,
+.comment-page,
+.phone-page {
+    margin-bottom: 20px;
+}
+ 
+.contact-page label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.input-page {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #CACACA ;
+    padding: 3px 0 3px 0 ;
+}
+
+ .contact-page input {
+    height: 25px;
+    font-size: 16px;
+}
+
+.contact-page textarea {
+    width: 60%;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 2px;
+    border: 2px solid #CACACA ;
+
+}
+
+.contact_btn-page {
+    background-color: #0563af;
+    color: white;
+    width: 150px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    border: solid 1px #0563af;
+}
+
+
+
+@media screen and (max-width:980px) {
+
+
+    .contact-box-page {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact_box-right-page {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+   .contact_box-right-page iframe{
+        width: 90%;
+    }
+
+    .contact_box-left-page {
+        max-width: 700px;
+        width: 80%;
+    }
+
+    .comment-page textarea {
+        max-width: "700px";
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,103 @@
+.contact{
+    margin-top: 100px;
+    display: flex;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact_box-left {
+    padding: 20px;
+}
+
+.contact_box-right {
+    height: 100%;
+}
+
+iframe{
+    margin-top: 2px;
+    height: 520px;
+    width: 420px;
+}
+
+.contact_title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 38px;
+}
+
+.name , .comment , .phone {
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.input{
+    max-width: 400px;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+}
+
+input{
+    height: 25px;
+    font-size: 16px;
+}
+
+.comment textarea{
+    font-size: 18px;
+    border: 1px solid ;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.contact_btn{
+    background-color:#0563af;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: solid 1px #0563af;
+}
+
+
+
+@media screen and (max-width:920px) {
+
+
+    .contact-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact_box-right{
+        max-width: 880px !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact_box-right iframe{
+      max-width: 880px !important;
+      width: 90%;
+    }
+
+    .contact_box-left{
+        max-width: 700px;
+        width: 80%;
+    }
+
+    .comment-text{
+        max-width: 700px;
+        width: 90%;
+    }
+}

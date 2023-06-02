@@ -1,0 +1,125 @@
+.header {
+    padding: 5px 0 5px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.header-list {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    max-width: 750px;
+    width: 100%;
+    color: #c2d2cf;
+    align-items: center;
+}
+
+.header_item {
+    color: #DDDDDD;
+    text-decoration: none;
+    text-align: center;
+    padding: 1px;
+    color: black;
+}
+
+.bars-box {
+    display: none;
+}
+
+#is_active {
+    color: white;
+    transform: scale(1.1);
+    background-color: #FF4E00;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.box select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    max-width: 113px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+.box select option {
+    padding: 10px;
+}
+
+
+
+.travel-link {
+    text-decoration: none;
+    color: rgb(63, 61, 61);
+}
+
+.travel-link p {
+    padding: 3px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.travel-link p:hover {
+    color: #FF4E00;
+    transition: 0.4s;
+}
+
+@media screen and (max-width:920px) {
+    .bars-box {
+        display: block !important;
+    }
+
+    .header-list {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-right: 40px;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 12;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 180px;
+        width: 100%;
+        padding-bottom: 15px;
+        height: 100vh;
+    }
+
+    .header_item {
+        width: 120px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    .cost-box {
+        display: none;
+    }
+
+    .travel-box{
+        right: 49.9%;
+        top: 220px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .travel-link p{
+        color: white;
+    }
+
+}

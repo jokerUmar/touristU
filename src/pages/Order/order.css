@@ -1,0 +1,248 @@
+.order_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.order_box-left {
+  width: 50%;
+}
+
+.order-personal {
+  display: flex;
+  max-width: 470px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.order-personal input {
+  width: 220px;
+  display: inline-block;
+  border: solid 1.5px #dddd;
+  padding: 3px;
+  outline: none;
+}
+
+.order-firma-name input,
+.order-city-name input,
+.order-street_address input,
+.order-region-name input,
+.order-mail-index input,
+.order-tel-number input,
+.order-email-address input {
+  width: 100%;
+  padding: 3px;
+  outline: none;
+  border: solid 1.5px #dddd;
+}
+
+.order-street_address input {
+  margin-top: 10px;
+}
+
+.order-personal,
+.order-firma-name,
+.order-country-name,
+.order-street_address,
+.order-city-name,
+.order-region-name,
+.order-mail-index,
+.order-tel-number,
+.order-email-address {
+  margin-top: 20px;
+  max-width: 470px;
+  width: 100%;
+}
+
+/* order box right */
+
+.order_box-right {
+  margin-top: 50px;
+  width: 35%;
+  padding: 25px;
+  border: solid 2px #dddd;
+}
+
+.order_box-title {
+  color: #ff4e00;
+  margin-bottom: 20px;
+}
+
+.order_box-head,
+.order_box-item,
+.order_box-list-result,
+.order_box-delivery,
+.order_box-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px 0 10px 0;
+}
+
+.order_box-head::after,
+.order_box-item::after,
+.order_box-delivery::after,
+.order_box-result::after,
+.order_box-list-result::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  background-color: #717070;
+  height: 1px;
+}
+
+.control {
+  margin-top: 20px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #5a5a5a;
+  margin-bottom: 10px;
+}
+
+.radio input {
+  margin-right: 10px;
+}
+
+.order_box-text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #5a5a5a;
+  line-height: 23px;
+}
+
+.take-order-btn {
+  width: 80%;
+  margin-top: 20px;
+  background-color: #002a3a;
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 4px 0 4px 0;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.take-order-btn:active{
+  transform: scale(1.02);
+}
+
+.order-btn_box {
+  display: flex;
+  justify-content: center;
+}
+
+.form_error{
+  font-size: 12px;
+  margin-top: 5px;
+  color: red;
+}
+
+.empty-checkout{
+  text-align: center;
+  max-width: 400px;
+  margin-top: 100px;
+}
+
+.empty_checkout-box .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media screen and (max-width: 920px) {
+    .order_box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  }
+  .order_box-left {
+      width: 80%;
+    }
+    
+  .order-personal,
+  .order-firma-name,
+  .order-country-name,
+  .order-street_address,
+  .order-city-name,
+  .order-region-name,
+  .order-mail-index,
+  .order-tel-number,
+  .order-email-address {
+      margin: 0 auto;
+      margin-top: 20px;
+      max-width: 900px;
+      width: 100%;
+    }
+    
+    .order-personal input {
+        width: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .order-personal input {
+        width: 260px;
+    }
+
+    .order_box-right{
+      width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .order-personal input {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .order-personal{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .order-personal input{
+        width: 99%;
+    }
+}
+
+@media screen and (max-width:500px) {
+  
+  .order_box-right {
+    padding: 15px;
+  }
+  
+  
+  .order_box-head,
+  .order_box-item,
+  .order_box-list-result,
+  .order_box-delivery,
+  .order_box-result {
+  font-size: 16px;
+}
+
+}
+
+
+@media screen and (max-width:385px) {
+  .order_box-head p,
+  .order_box-item p,
+  .order_box-list-result p,
+  .order_box-delivery p,
+  .order_box-result p{
+    font-size: 14px;
+    width: 130px;
+  }
+}
