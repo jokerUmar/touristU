@@ -1,10 +1,14 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, lazy } from "react";
 import { v4 as uuidv4 } from "uuid";
+// const tailand_img = lazy(() => import("../../assets/images/tailand-img-1.jpg"));
+// const egypt_img = lazy(() => import("../../assets/images/egypt.jpg"));
+// const antalya_img = lazy(() => import("../../assets/images/antalya.jpg"));
+// const dubay_img = lazy(() => import("../../assets/images/dubay.jpg"));
 import tailand_img from "../../assets/images/tailand-img-1.jpg";
 import egypt_img from "../../assets/images/egypt.jpg";
 import antalya_img from "../../assets/images/antalya.jpg";
 import dubay_img from "../../assets/images/dubay.jpg";
-import Card from "../Card/Card";
+const Card = lazy(() => import("../Card/Card"));
 import { lang } from "../../lang/Lang";
 import { LangContext } from "./LangContext";
 
@@ -22,7 +26,7 @@ export const DataProvider = ({ children }) => {
       cost_num: 16850000,
       img: tailand_img,
       count: 1,
-  
+
       key: uuidv4(),
       content: (
         <Card
@@ -92,7 +96,6 @@ export const DataProvider = ({ children }) => {
       ),
     },
   ];
-
 
   return (
     <DataContext.Provider value={{ data }}>{children}</DataContext.Provider>

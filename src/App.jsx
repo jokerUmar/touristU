@@ -1,17 +1,6 @@
 import { useState, useContext, useEffect, lazy } from "react";
 import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
-// import Header from "./components/Header/Header";
-// import Services from "./components/services/Services";
-// import MainV from "./components/mainV/MainV";
-// import About from "./components/about/About";
-// import Travel from "./components/travel/Travel";
-// import Contact from "./components/contact/Contact";
-// import Footer from "./components/footer/Footer";
-// import ContactPage from "./pages/contactPage/ContactPage";
-// import Market from "./pages/market/Market";
-// import Order from "./pages/Order/Order";
-// import PageNotFound from "./pages/pageNotFound/PageNotFound";
 import { BarsContext } from "./components/context/barsContext";
 const Header = lazy(() => import("./components/Header/Header"));
 const Services = lazy(() => import("./components/services/Services"));
